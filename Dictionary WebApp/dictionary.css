@@ -1,15 +1,19 @@
 
 body{
-/*background-color: #FF8832;*/
+	background-image: url("francesco-ungaro-737224-unsplash.jpg");
+	background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 .title{
+	color: rgb(1, 35, 20);
+	text-shadow: 2px 0px black;
 	display: block;
 	position: sticky;
 	text-align: center;
 	height: 120%;
-	font-family: 'Raleway', sans-serif;
-	background-color: #FFBE56;
+	/* font-family: 'Raleway', sans-serif; */
+	font-family: 'Open Sans Condensed', sans-serif;
 	margin: 0;
     height: 100%;
 }
@@ -29,9 +33,9 @@ input{
 	border-width: 1px;
 	border-radius: 25px;
 	font-family: 'Nanum Gothic', sans-serif;
-	background-color: black;
+	background-color: white;
 	border-color: black;
-	color: white;
+	color: black;
 
 	font-size: 18px;
 }
@@ -51,7 +55,6 @@ select{
 }
 
 .insert_word{
-	background-color: 
 	margin: 0 auto;
 	margin-top: 15%;
 
