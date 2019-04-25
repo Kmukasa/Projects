@@ -1,0 +1,58 @@
+
+body{
+/*background-color: #FF8832;*/
+}
+
+.title{
+	display: block;
+	position: sticky;
+	text-align: center;
+	height: 120%;
+	font-family: 'Raleway', sans-serif;
+	background-color: #FFBE56;
+	margin: 0;
+    height: 100%;
+}
+
+h1{
+	font-size: 80px;
+}
+
+input{
+	display: block;
+	height: 30px;
+	position: relative;
+	width: 25%;
+	border-width: 1px;
+	text-align: center;
+	margin: 0 auto;
+	border-width: 1px;
+	border-radius: 25px;
+	font-family: 'Nanum Gothic', sans-serif;
+	background-color: black;
+	border-color: black;
+	color: white;
+
+	font-size: 18px;
+}
+
+select{
+	display: block;
+	position: relative;
+	top: -20px; 
+	text-align: center;
+	margin: 0 auto;
+	border-width: 1px;
+	font-family: 'Nanum Gothic', sans-serif;
+	background-color: black;
+	border-color: black;
+	color: white;
+
+}
+
+.insert_word{
+	background-color: 
+	margin: 0 auto;
+	margin-top: 15%;
+
+}
