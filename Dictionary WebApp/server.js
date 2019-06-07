@@ -2,7 +2,7 @@ var express = require('express')
 var app =  express();
 const path = require('path')
 var bodyParser = require('body-parser')
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 8080
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -17,8 +17,10 @@ const client = new Client({
 client.connect();
 
 client.query("SELECT * FROM words", (err, res)=>{
-    console.log(err, res);
-    client.end();
+    // console.log(err, res)
+    console.log(res.rows)
+    res.render("results", rows)
+    client.end()
 });
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
