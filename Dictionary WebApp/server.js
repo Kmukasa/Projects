@@ -16,11 +16,18 @@ const client = new Client({
 
 client.connect();
 
-client.query("SELECT * FROM words", (err, res)=>{
-    // console.log(err, res)
-    console.log(res.rows)
-    res.render("results", rows)
-    client.end()
+app.get('/definitions', function(request, response){
+
+    response.header("Access-Control-Allow-Origin", "*")
+    response.header("Access-Control-Allow-Headers", "X-Requested-Width")
+
+    client.query("SELECT * FROM words", (err, res)=>{
+        // console.log(err, res)
+        result = {};
+        console.log(res.rows)
+        client.end()
+        // res.render("definitions", rows)
+    })
 });
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))

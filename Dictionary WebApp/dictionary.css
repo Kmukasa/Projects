@@ -59,7 +59,11 @@ select{
 	margin-top: 15%;
 
 }
-
-footer{
-	margin-bottom: 0px; 
+.bottom{
+	position: absolute;
+}
+.foot{
+	position:absolute;
+    bottom:0;
+    left:0;
 }
